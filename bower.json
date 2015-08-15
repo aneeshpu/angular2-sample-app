@@ -14,6 +14,6 @@
     "tests"
   ],
   "dependencies": {
-    "a1atscript": "~0.4.4",
+    "a1atscript": "~0.4.4"
   }
 }
