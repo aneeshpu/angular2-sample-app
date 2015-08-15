@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "http-server -p 9080 -d -o"
+    "start": "http-server -p 9080 -d -o"
   },
   "author": "",
   "license": "ISC",
