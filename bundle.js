@@ -46,10 +46,10 @@
 
 	"use strict";
 
-	var _MyModuleJs = __webpack_require__(1);
+	var _mymoduleJs = __webpack_require__(1);
 
-	var foo = new _MyModuleJs.FooClass();
-	foo.sayFoo("with ES6");
+	var myClass = new _mymoduleJs.MyClass();
+	myClass.hello("with ES6");
 
 /***/ },
 /* 1 */
@@ -65,22 +65,22 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var FooClass = (function () {
-	  function FooClass() {
-	    _classCallCheck(this, FooClass);
+	var MyClass = (function () {
+	  function MyClass() {
+	    _classCallCheck(this, MyClass);
 	  }
 
-	  _createClass(FooClass, [{
-	    key: "sayFoo",
-	    value: function sayFoo(msg) {
-	      document.write("Hello World ", msg);
+	  _createClass(MyClass, [{
+	    key: "hello",
+	    value: function hello(msg) {
+	      document.write("Hello World " + msg + "!!!");
 	    }
 	  }]);
 
-	  return FooClass;
+	  return MyClass;
 	})();
 
-	exports.FooClass = FooClass;
+	exports.MyClass = MyClass;
 
 /***/ }
 /******/ ]);

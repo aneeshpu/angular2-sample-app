@@ -1,5 +1,5 @@
-import {FooClass as Foo} from "./MyModule.js";
+import {MyClass} from "./mymodule.js";
 
 
-var foo = new Foo();
-foo.sayFoo("with ES6");
+var myClass = new MyClass();
+myClass.hello("with ES6");
