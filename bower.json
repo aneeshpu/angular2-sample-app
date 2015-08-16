@@ -13,7 +13,8 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "a1atscript": "~0.4.4"
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "~1.4.4"
   }
 }
