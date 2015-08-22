@@ -1,5 +1,18 @@
-import {MyClass} from "./mymodule.js";
+import 'es6-shim';
+import 'angular';
+import { AsModule, Component, View, bootstrap } from './bower_components/a1atscript/dist/a1atscript.bundle.js';
 
+@AsModule('App', [])
+@Component({
+  selector: 'jump-app'
+})
+@View({
+  template: `<p>hello world</p>`,
+})
+class TestApp {
+  constructor(){
+    console.log('constructor');
+  }
+}
 
-var myClass = new MyClass();
-myClass.hello("with ES6");
+bootstrap(TestApp);

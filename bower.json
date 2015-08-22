@@ -15,6 +15,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "angular": "~1.4.4"
+    "angular": "~1.4.4",
+    "a1atscript": "~0.4.4"
   }
 }

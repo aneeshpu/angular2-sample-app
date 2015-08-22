@@ -5,7 +5,13 @@ module.exports = {
     filename: "bundle.js"
   },module: {
     loaders: [
-      {test: /\.js$/,exclude: /(node_modules|bower_components)/, loader: "babel"}
+      {test: /\.js$/
+      , loader: "babel"
+      ,query: {
+        optional: ['es7.decorators'],
+        stage: 0
+      }
+      }
     ]
   }
 }
