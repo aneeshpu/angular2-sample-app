@@ -1,13 +1,13 @@
 import 'es6-shim';
 import 'angular';
-import { AsModule, Component, View, bootstrap } from './bower_components/a1atscript/dist/a1atscript.bundle.js';
+import { AsModule, Component, View, bootstrap } from 'a1atscript';
 
 @AsModule('App', [])
 @Component({
   selector: 'jump-app'
 })
 @View({
-  template: `<p>hello world</p>`,
+  template: `<p>hello my dear world</p>`,
 })
 class TestApp {
   constructor(){
