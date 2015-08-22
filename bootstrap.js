@@ -4,14 +4,16 @@ import { AsModule, Component, View, bootstrap } from 'a1atscript';
 
 @AsModule('App', [])
 @Component({
-  selector: 'jump-app'
+  selector: 'jump-app',
+  controllerAs: 'vm'
 })
 @View({
-  template: `<p>hello my dear world</p>`,
+  template: `<p>Hello my dear world {{vm.name}}</p>`,
 })
 class TestApp {
+  name:string;
   constructor(){
-    console.log('constructor');
+    this.name = "More Awesome";
   }
 }
 
